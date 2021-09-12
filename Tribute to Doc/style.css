@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+:root{
+    --blue:#3c6382;
+    --darkblue:#0a3d62;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .3s cubic-beizer(.38,1.15,.7,1.12);
+}
+*::selection{
+    background: var(--darkblue);
+    color: white;
+}
+body{
+    background: url("https://dbmci.com/blog/wp-content/uploads/2020/10/Doctors_For_Men-732x549-thumbnail.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 75%;
+    overflow-x:hidden;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    
+}
+header .logo{
+    font-size: 2.5rem;
+    color:var(--darkblue);
+}
+header .logo span{
+    color: var(--darkblue);
+}
+header .navbar a{
+    font-size: 1.7rem;
+    margin-left: .5rem;
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+    color: var(--darkblue);
+}
+header .navbar a.active,
+header .navbar a:hover{
+    background: var(--darkblue);
+    color: white;
+    box-shadow: 0.5rem  rgba(0,0,0,.1);
+}
+.textbox{
+    width:80%;
+    color:rgb(18, 9, 61);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+}
+.textbox h1{
+    font-size: 65px;
+}
+.textbox h2{
+    font-size: 25px;
+    color: rgb(7, 49, 54);
+}
+
+#menu{
+    font-size: 3rem;
+    color: var(--darkblue);
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:1200px){
+    html{
+        font-size: 65%;
+    }
+}
+@media (max-width:991px){
+    #menu{
+        display: block;
+    } 
+}
